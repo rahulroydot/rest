@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:product:product-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../product-api/src/main/java"
+}
+
+group = "com.product"

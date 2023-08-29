@@ -1,0 +1,6 @@
+Bundle-Name: blog-api-api
+Bundle-SymbolicName: com.blog.api.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.blog.api.dto.v1_0,\
+	com.blog.api.resource.v1_0

@@ -1,0 +1,9 @@
+apiDir: "../blog-api-api/src/main/java"
+apiPackagePath: "com.blog.api"
+application:
+    baseURI: "/blog-api"
+    className: "BlogApiApplication"
+    name: "BlogApi"
+author: "me"
+clientDir: "../blog-api-client/src/main/java"
+testDir: "../blog-api-test/src/testIntegration/java"

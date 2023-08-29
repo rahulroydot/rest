@@ -1,0 +1,5 @@
+Bundle-Name: blog-api-test
+Bundle-SymbolicName: com.blog.api.test
+Bundle-Version: 1.0.0
+-includeresource: com.blog.api.client.jar=../blog-api-client/build/libs/com.blog.api.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

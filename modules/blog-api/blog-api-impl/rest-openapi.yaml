@@ -1,0 +1,66 @@
+info:
+  description: "MailRest REST API. A Java client JAR is available for use with the group ID 'com.liferay', artifact ID 'com.liferay.mail.client', and version '1.0.0'."
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  title: "MailRest"
+  version: v1.0
+openapi: 3.0.1
+components:
+  schemas:
+    Blogs:
+      description: "This is the rest builder for blogs"
+      properties:
+        id:
+          description: "The blog Id"
+          format: int64
+          type: integer
+        headline: 
+          description: "The blog headline"
+          type: string
+        articleBody:
+          description: "The blog body"
+          type: string
+
+paths:
+  "/blogs":
+    get:
+      description: "Gets a list of BlogPost"
+      operationId: getBlogs
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: "#/components/schemas/Blogs"
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: "#/components/schemas/Blogs"
+                type: array
+      tags: ["Blogs"]
+    post:
+      description: "Creates a new BlogPost"
+      operationId: postBlog
+      requestBody:
+        content:
+          application/json:
+            schema:
+               $ref: "#/components/schemas/Blogs"
+          application/xml:
+            schema:
+               $ref: "#/components/schemas/Blogs"
+      responses:
+        200:
+          description: "posted blog"
+          content:
+            application/json:
+              schema:
+                 $ref: "#/components/schemas/Blogs"
+            application/xml:
+              schema:
+                 $ref: "#/components/schemas/Blogs"
+      tags: ["Blogs"]

@@ -1,0 +1,3 @@
+Bundle-Name: blog-api-client
+Bundle-SymbolicName: com.blog.api.client
+Bundle-Version: 1.0.0

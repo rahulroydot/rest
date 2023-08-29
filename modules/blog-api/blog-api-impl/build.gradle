@@ -1,0 +1,9 @@
+dependencies {
+	compile project(":modules:blog-api:blog-api-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	restBuilder (group: "com.liferay", name: "com.liferay.portal.tools.rest.builder", version: "1.0.212") {force = true}
+}
+
+group = "com.blog.api"
